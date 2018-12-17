@@ -1,0 +1,18 @@
+['Minions', 'Wonder Woman', 'Beauty and the Beast', 'Baby Driver', 'Big Hero 6', 'Deadpool', 'Guardians of the Galaxy Vol.2', 'Avatar', 'John Wick', 'Gone Girl', 'Captain America: Civil War', 'Pirates of the Caribbean: Dead Men Tell No Tales', 'Captain Underpants: The First Epic Movie', 'The Maze Runner', 'Ghost in the Shell', 'Thor: Ragnarok', 'Logan', 'Guardians of the Galaxy', 'The Last King', 'The Dark Tower', 'The Fate of the Furious', 'Pirates of the Caribbean: The Curse of the Black Pearl', 'Security', 'The Legend of Tarzan', 'King Arthur: Legend of the Sword', 'Doctor Strange', 'Suicide Squad', 'Star Wars', 'Maze Runner: The Scorch Trials', 'Fantastic Beasts and Where to Find Them', 'Wind River', 'Now You See Me 2', 'Transformers: The Last Knight', 'Before I Fall', "Harry Potter and the Philosopher's Stone", 'Avengers: Age of Ultron', 'Get Out', 'Despicable Me 3', 'Rogue One: A Star Wars Story', 'Lucy', 'Operation Mekong', 'Baywatch', 'Thor: The Dark World', 'The Twilight Saga: Eclipse', 'Pacific Rim', 'The Matrix', 'Jurassic World', 'Interstellar', 'The Lord of the Rings: The Fellowship of the Ring', 'Edge of Tomorrow', 'The Hobbit: The Battle of the Five Armies', 'Star Wars: The Force Awakens', 'The Amazing Spider-Man', 'Dunkirk', 'The Twilight Saga: New Moon', 'Harry Potter and the Chamber of Secrets', "Pirates of the Caribbean: Dead Man's Chest", 'Kong: Skull Island', 'The Lord of the Rings: The Two Towers', 'Mad Max: Fury Road', 'The Lord of the Rings: The Return of the King', 'Thor', 'Inception', 'Batman Begins', 'Harry Potter and the Prisoner of Azkaban', 'The Saint', 'Pirates of the Caribbean: On Stranger Tides', 'Insurgent', "Assassin's Creed", 'Furious 7', 'The Hunger Games: Mockingjay - Part 2']
+
+
+
+
+
+['The Hunger Games: Mockingjay - Part 1', 'War for the Planet of the Apes', 'Pulp Fiction', 'The Dark Knight', 'Blade Runner', 'The Avengers', 'The Circle', 'The Bad Batch', 'Dawn of the Planet of the Apes', 'Alien: Covenant', 'Boyka: Undisputed IV', 'Whiplash', 'Fight Club', 'What Happened to Monday', '47 Meters Down', 'The Shawshank Redemption', 'John Wick: Chapter 2', "Schindler's List", 'Rise of the Planet of the Apes', 'The Godfather', 'Psycho', 'The Godfather: Part II', 'Life', "Miss Peregrine's Home for Peculiar Children", 'The Beguiled', "One Flew Over the Cuckoo's Nest", 'Me Before You', 'The Mother of Tears', 'The Mummy', 'Creed', 'Fifty Shades of Grey', 'Once Upon a Time in America', 'The Autopsy of Jane Doe', 'Collide', 'Arrival', '12 Years a Slave', 'Fifty Shades Darker', 'Split', 'The Purge: Anarchy', 'Titanic', 'Ant-Man']
+
+
+
+
+['Wish Upon', 'Forrest Gump', 'Ted 2', 'Spirited Away', 'Life Is Beautiful', 'Girls Trip', 'Fury', 'A Silent Voice', 'Dilwale Dulhania Le Jayenge', 'The Emoji Movie', 'Rescue Under Fire', 'The House', 'Spider-Man', 'Diary of a Wimpy Kid: The Long Haul', 'Spider-Man 3', 'Sex Tape', "Pan's Labyrinth"]
+
+
+
+
+
+['Your Name.', 'The Imitation Game', 'Chappie', 'Kingsman: The Secret Service']

@@ -1,0 +1,206 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include <string.h>
+#include <math.h>
+int main()
+{
+	int i;
+	
+	double x;
+	 FILE *myfile;
+  double myvariable;
+	char ch[150];
+	char *mat[500][500];
+	char buffer[25000] ;
+   char *record,*line;
+   int l=0,j=0,a,b;
+    float random_k[10];
+	float weight[150];
+	int k=4,m;
+	
+	srand((unsigned int)time(NULL));
+    for (  i=0; i<4; i++){
+    	
+        random_k[i] = ((float)rand())/RAND_MAX;
+        //printf("%f\n",random_k[i]);
+     }
+	printf("\t\t\t**********K-Means Algorithm Implementation*************\n\n");
+	printf("\t\tWe are making 4 clusters based on the generes because we have total of 16 generes mentioned below:-");
+	printf("\n\t\tGeneres of the movie in the data according to which the cluster will be maintained");
+	printf("\n\t\t\tFamily\n\t\t\tAction\n\t\t\tAdventure\n\t\t\tMystery\n\t\t\tScience Fiction\n\t\t\tDrama\n\t\t\tThriller\n\t\t\tFamily\n\t\t\tHorror\n\t\t\tFantasy\n\t\t\tComedy\n\t\t\tWar\n\t\t\tAnimation\n\t\t\tRomance\n\t\t\tHistory\n\t\t\tCrime\n");
+	char *arr_generes[] ={"Family","Action","Adventure","Mystery","Science Fiction","Drama","Thriller","Family","Horror","Fantasy","Comedy","War","Animation","Romance","History","Crime"};
+	printf("\n\nThe movie data we are working on stored in an array\n\n\n");
+	FILE *fstream = fopen("C:/Users/prashantkumar_g/Desktop/Splunk/Important files/K-mean/data.csv","r");
+   if(fstream == NULL)
+   {
+      printf("\n file opening failed ");
+      return -1 ;
+   }while((line=fgets(buffer,sizeof(buffer),fstream))!=NULL)
+   {
+     record = strtok(line,",");
+     while(record != NULL)
+     {
+     printf("[%d][%d]%s",l,j,record) ; 
+     mat[l][j++] = record ; 
+     record = strtok(NULL,",");
+     
+	 }
+     ++l ;
+     j=0;
+   }
+
+	 		FILE *fp;
+	fp = fopen("C:/Users/prashantkumar_g/Desktop/Splunk/Important files/K-mean/Weight.txt","r");
+   if(fp==NULL)
+    {
+    printf("Error Reading File\n");
+    }
+    for(m=0;m<140;m++)
+    {
+    fscanf(fp,"%f\t",&ch[m]);
+    }
+    
+    //for(m=0;m<140;m++)
+   //{
+ 
+     //printf( " \n weight : %f", ch[m]);
+    //} 
+    //myfile=fopen("C:/Users/prashantkumar_g/Desktop/Splunk/Important files/K-mean/Weight.txt", "r");
+    // for(i = 0; i < 140; i++)
+  //{
+   // for (j = 0 ; j <1; j++)
+    //{
+      //fscanf(myfile,"%lf",&myvariable);
+      //printf("%.15f ",myvariable);
+    //}
+    //printf("\n");
+  
+
+  //fclose(myfile);
+  
+  printf("\n\n\n***********************Weights are calculated by multiplying vote_count and popularity**************************\n\n\n");
+FILE * fptr;
+  
+  int p,q;
+  char ch2[150];
+  char str[100];
+  char fname[150]="C:/Users/prashantkumar_g/Desktop/Splunk/Important files/K-mean/Weight.txt";
+  char str1;
+  fptr = fopen (fname, "r");  
+	printf("The weights of the corresponding movies are:\n");
+	for(p=0;p<140;p++)
+    {
+    fscanf(fptr,"%lf[^,]",&ch2[p]);
+    }
+	 for(p=0;p<140;p++)
+   {
+ 
+     //printf( " \n Value of safety is : %f", ch1[u]);
+    }
+
+	str1 = fgetc(fptr);
+	while (str1 != EOF)
+		{
+			printf ("%c", str1);
+			str1 = fgetc(fptr);	
+		}
+    printf("\n\n");
+    fclose (fptr);
+
+printf("***************Heights are calculated using newton methon when multiplying the vote count by random number from 0 to 1***************\n\n\n");
+
+FILE * fptrr;
+FILE * fpr;
+double wt;
+int str5;
+char ch1[1000];  
+  int u,y;
+  char str2[100];
+  char fname1[150]="C:/Users/prashantkumar_g/Desktop/Splunk/Important files/K-mean/Height.txt";
+  char fname2[150]="C:/Users/prashantkumar_g/Desktop/Splunk/Important files/K-mean/clustered_data.txt";
+  char str3;
+  fptrr = fopen (fname1, "r");
+  fpr=fopen(fname2,"r");
+   for(u=0;u<140;u++)
+    {
+    fscanf(fptrr,"%6f[^,]",&ch1[u]);
+    }
+	 for(u=0;u<140;u++)
+   {
+ 
+     //printf( " \n Value of safety is : %f", ch1[u]);
+    }
+	printf("The Heights of the corresponding movies are:\n\n");
+	str3 = fgetc(fptr);
+	while (str3 != EOF)
+		{
+			printf ("%c", str3);
+			str3 = fgetc(fptrr);
+		}
+    printf("\n\n");
+    fclose (fptrr);  
+printf("The distance between the features and the corresponding centroid is being calculated by Eucledean distance");
+printf("\n\n\t\tsqrt(pow(X1-H1),2)+pow((X2-W1),2)\n\nX1:observation value of variable weight\n\nH1:Centroid value of cluster height");  
+printf("\n\nX2:Observation value for variable height\n\nW1:Centroid value of cluster for variable weight\n\n");  
+printf("\n\nThe clusters are divided into 4 groups according to the centriod and generes\n\n");
+str5 = fgetc(fpr);
+	while (str5 != EOF)
+		{
+			printf ("%c", str5);
+			str5 = fgetc(fpr);
+		}  
+
+char clusterk1[150]; 
+char clusterk2[150];
+char clusterk3[150];
+char clusterk4[150];
+for(i=0;i<140;i++)   //calculation of eucleadean distance for every centroid and every movie
+ {
+	for(j=0;j<4;j++)
+	{
+		int X1=ch[i]-random_k[j];
+		int X2=ch1[i]-random_k[j];
+		int euc_dist=sqrt(pow(X1,2))+pow(X2,2);
+		int k1=euc_dist-random_k[0];
+		int k2=euc_dist-random_k[1];
+		int k3=euc_dist-random_k[2];
+		int k4=euc_dist-random_k[3];
+		 if(k1<k2&&k1<k3&&k1<k4)//storing the data acording to its feature value in the cluster
+		 {
+		 	clusterk1[i]=mat[i][1];
+		 }
+		 if(k2<k1&&k2<k3&&k2<k4)
+		 {
+		 	clusterk2[i]=mat[i][1];
+		 }
+		 if(k3<k1&&k3<k2&&k1<k4)
+		 {
+		 	clusterk3[i]=mat[i][1];
+		 }
+		 if(k4<k1&&k4<k3&&k1<k2)
+		 {
+		 	clusterk4[i]=mat[i][1];
+		 }
+		 }
+		  	
+ }
+ 
+  for(i=0;i<sizeof(clusterk1);i++) //printing every cluster
+  {
+  	printf("%c",clusterk1[i]);
+  }
+for(i=0;i<sizeof(clusterk2);i++)
+  {
+  	printf("%c",clusterk2[i]);
+  }
+for(i=0;i<sizeof(clusterk3);i++)
+  {
+  	printf("%c",clusterk3[i]);
+  }
+for(i=0;i<sizeof(clusterk4);i++)
+  {
+  	printf("%c",clusterk4[i]);
+  }
+  return 0;
+}
